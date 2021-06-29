@@ -513,8 +513,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    transform: translate(12%, 38%);
     width: 100%;
+    transform: translate(12%, 220%) ; 
   }
   .apply-button a button {
     font-size: 0.7rem !important;
@@ -951,14 +951,15 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   .applay-button-area {
-    transform: translate(20%, 39%);
+    /* transform: translate(20%, 39%); */
+    transform: translate(17%, 220%) ; 
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 435px) {
   .applay-button-area {
-    transform: translate(22%, 39%);
+    transform: translate(22%, 220%) ;
   }
 }
 
@@ -992,8 +993,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 492px) {
+  .owl-stage-outer {
+    /* padding-top: 30px;  */
+  }
   .slider-text h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 40px;
   }
   .slider-text ul {

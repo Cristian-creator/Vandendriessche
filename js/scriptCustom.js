@@ -4,13 +4,20 @@
 // --------             Sticky nav              ---------
 let navbar = document.querySelector(".hd-sec");
 let sticky = navbar.offsetTop;
+let scrolled = false;
 
 window.addEventListener('scroll', () => {
-  // console.log(sticky, window.pageYOffset);
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky_menu")
-  } else {
+  console.log(sticky, window.pageYOffset);
+  if (window.pageYOffset > sticky
+    //  && !scrolled
+     ) {
+    navbar.classList.add("sticky_menu");
+    scrolled = true;
+  } else
+  // if(window.pageYOffset <= sticky && scrolled) 
+  {
     navbar.classList.remove("sticky_menu");
+    scrolled = true;
   }
 })
 

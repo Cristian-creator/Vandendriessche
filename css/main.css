@@ -342,6 +342,7 @@ input:focus {
   background: #fff;
   /* border-top: 1px solid #eee; */
   height: 110px !important;
+  /* overflow: hidden; */
 }
 
 /* @media screen and (max-width: 768px) {
@@ -4681,6 +4682,9 @@ Footer Section
   .footer-widget {
     padding-top: 40px !important;
     margin: 0 !important;
+  }
+  .apply-button {
+    height: 33px !important;
   }
 }
 @media screen and (max-width: 321px) {
